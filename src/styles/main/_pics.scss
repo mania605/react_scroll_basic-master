@@ -1,0 +1,15 @@
+.pics {
+	width: 100%;
+	height: 100vh;
+	background: lightgreen;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.box {
+		width: 400px;
+		height: 400px;
+		background: #333;
+	}
+}
