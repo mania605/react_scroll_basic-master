@@ -27,8 +27,10 @@ export default function Home() {
 		// 컴포넌트 마운트시 윈도우 객체의 scroll 이벤트에 handleScroll 함수 연결
 		window.addEventListener('resize', getPos);
 		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('resize', getPos);
-		window.removeEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('resize', getPos);
+			window.removeEventListener('scroll', handleScroll);
+		};
 	}, []);
 
 	return (
